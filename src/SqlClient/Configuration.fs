@@ -50,15 +50,15 @@ type internal DesignTimeConnectionString =
                 if File.Exists appConfig then appConfig
                 elif File.Exists webConfig then webConfig
                 else failwithf "Cannot find either app.config or web.config."
-        
-        let map = ExeConfigurationFileMap()
-        map.ExeConfigFilename <- configFilename
-        let configSection = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None).ConnectionStrings.ConnectionStrings
-        match configSection, lazy configSection.[name] with
-        | null, _ | _, Lazy null -> raise <| KeyNotFoundException(message = sprintf "Cannot find name %s in <connectionStrings> section of %s file." name configFilename)
-        | _, Lazy x -> 
-            let providerName = if String.IsNullOrEmpty x.ProviderName then "System.Data.SqlClient" else x.ProviderName
-            x.ConnectionString, providerName
+        "conectionstring to be pulled from file", "System.Data.SqlClient"
+//        let map = ExeConfigurationFileMap()
+//        map.ExeConfigFilename <- configFilename
+//        let configSection = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None).ConnectionStrings.ConnectionStrings
+//        match configSection, lazy configSection.[name] with
+//        | null, _ | _, Lazy null -> raise <| KeyNotFoundException(message = sprintf "Cannot find name %s in <connectionStrings> section of %s file." name configFilename)
+//        | _, Lazy x -> 
+//            let providerName = if String.IsNullOrEmpty x.ProviderName then "System.Data.SqlClient" else x.ProviderName
+//            x.ConnectionString, providerName
 
     member this.Value = 
         match this with
@@ -77,10 +77,11 @@ type internal DesignTimeConnectionString =
                 then 
                     value
                 else
-                    let section = ConfigurationManager.ConnectionStrings.[name]
-                    if section = null 
-                    then raise <| KeyNotFoundException(message = sprintf "Cannot find name %s in <connectionStrings> section of config file." name)
-                    else section.ConnectionString
+                    "conectionstring to be pulled from file"
+//                    let section = ConfigurationManager.ConnectionStrings.[name]
+//                    if section = null 
+//                    then raise <| KeyNotFoundException(message = sprintf "Cannot find name %s in <connectionStrings> section of config file." name)
+//                    else section.ConnectionString
             @@>
 
     member this.IsDefinedByLiteral = match this with | Literal _ -> true | _ -> false

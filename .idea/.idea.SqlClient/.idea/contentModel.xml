@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_SqlClient.305612884.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p=".nuget" t="Include">
+        <e p="NuGet.Config" t="Include" />
+        <e p="NuGet.exe" t="Include" />
+        <e p="NuGet.targets" t="Include" />
+      </e>
+      <e p="build.cmd" t="Include" />
+      <e p="build.fsx" t="Include" />
+      <e p="docs" t="Include">
+        <e p="content" t="Include">
+          <e p="comparison.fsx" t="Include" />
+          <e p="configuration and input.fsx" t="Include" />
+          <e p="data modification.fsx" t="Include" />
+          <e p="debugging.fsx" t="Include" />
+          <e p="faq.fsx" t="Include" />
+          <e p="index.fsx" t="Include" />
+          <e p="output.fsx" t="Include" />
+          <e p="setup.fsx" t="Include" />
+          <e p="SqlClientComparison.md" t="Include" />
+          <e p="sqlenumprovider.quickstart.fsx" t="Include" />
+          <e p="transactions.fsx" t="Include" />
+          <e p="unit-testing.fsx" t="Include" />
+          <e p="whatsnew.fsx" t="Include" />
+        </e>
+        <e p="tools" t="Include">
+          <e p="generate.fsx" t="Include" />
+          <e p="templates" t="Include">
+            <e p="template.cshtml" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="LICENSE.md" t="Include" />
+      <e p="nuget/SqlClient.nuspec" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="README.md" t="Include" />
+      <e p="RELEASE_NOTES.md" t="Include" />
+      <e p="Solution Items" t="Include" />
+      <e p="SqlClient.sln" t="IncludeFlat" />
+      <e p="src/SqlClient" t="IncludeRecursive">
+        <e p="AssemblyInfo.fs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CodeGenerator.fs" t="Include" />
+        <e p="Configuration.fs" t="Include" />
+        <e p="DataTable.fs" t="Include" />
+        <e p="DesignTime.fs" t="Include" />
+        <e p="DynamicRecord.fs" t="Include" />
+        <e p="ISqlCommand.fs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="SqlClient.fsproj" t="IncludeRecursive" />
+        <e p="SqlClientExtensions.fs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

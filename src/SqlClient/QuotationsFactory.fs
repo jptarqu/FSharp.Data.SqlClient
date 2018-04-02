@@ -44,9 +44,9 @@ type QuotationsFactory private() =
                 //done via reflection because not implemented on Mono
                 x.GetType().GetProperty("TypeName").SetValue(x, typeName, null)
 
-            if %%Expr.Value p.TypeInfo.SqlEngineTypeId = 240 
-            then
-                x.UdtTypeName <- %%Expr.Value p.TypeInfo.TypeName
+//            if %%Expr.Value p.TypeInfo.SqlEngineTypeId = 240 
+//            then
+//                x.UdtTypeName <- %%Expr.Value p.TypeInfo.TypeName
             x
         @@>
 

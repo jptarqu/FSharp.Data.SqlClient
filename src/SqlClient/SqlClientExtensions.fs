@@ -12,10 +12,12 @@ open System.Reflection
 
 type SqlCommand with
     member this.AsyncExecuteReader behavior =
-        Async.FromBeginEnd((fun(callback, state) -> this.BeginExecuteReader(callback, state, behavior)), this.EndExecuteReader)
+        ()
+        //Async.FromBeginEnd((fun(callback, state) -> this.BeginExecuteReader(callback, state, behavior)), this.EndExecuteReader)
 
     member this.AsyncExecuteNonQuery() =
-        Async.FromBeginEnd(this.BeginExecuteNonQuery, this.EndExecuteNonQuery) 
+        ()
+        //Async.FromBeginEnd(this.BeginExecuteNonQuery, this.EndExecuteNonQuery) 
 
     static member internal DefaultTimeout = (new SqlCommand()).CommandTimeout
 
@@ -63,15 +65,8 @@ type Column = {
         then typedefof<_ option>.MakeGenericType this.TypeInfo.ClrType
         else this.TypeInfo.ClrType
     
-    member this.GetProvidedType(?unitsOfMeasurePerSchema: Dictionary<string, ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition list>) = 
-        let typeConsideringUOM: Type = 
-            if this.TypeInfo.IsUnitOfMeasure && unitsOfMeasurePerSchema.IsSome
-            then
-                assert(unitsOfMeasurePerSchema.IsSome)
-                let uomType = unitsOfMeasurePerSchema.Value.[this.TypeInfo.Schema] |> List.find (fun x -> x.Name = this.TypeInfo.UnitOfMeasureName)
-                ProviderImplementation.ProvidedTypes.ProvidedMeasureBuilder.Default.AnnotateType(this.TypeInfo.ClrType, [ uomType ])
-            else
-                this.TypeInfo.ClrType
+    member this.GetProvidedType() = 
+        let typeConsideringUOM: Type =  this.TypeInfo.ClrType
 
         if this.Nullable
         then
@@ -144,14 +139,8 @@ type Parameter = {
         | SqlDbType.NChar | SqlDbType.NText | SqlDbType.NVarChar -> this.MaxLength / 2
         | _ -> this.MaxLength
 
-    member this.GetProvidedType(?unitsOfMeasurePerSchema: Dictionary<string, ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition list>) = 
-        if this.TypeInfo.IsUnitOfMeasure && unitsOfMeasurePerSchema.IsSome
-        then
-            assert(unitsOfMeasurePerSchema.IsSome)
-            let uomType = unitsOfMeasurePerSchema.Value.[this.TypeInfo.Schema] |> List.find (fun x -> x.Name = this.TypeInfo.UnitOfMeasureName)
-            ProviderImplementation.ProvidedTypes.ProvidedMeasureBuilder.Default.AnnotateType(this.TypeInfo.ClrType, [ uomType ])
-        else
-            this.TypeInfo.ClrType
+    member this.GetProvidedType() = 
+        this.TypeInfo.ClrType
 
 let private dataTypeMappings = Dictionary<string, TypeInfo[]>()
 
