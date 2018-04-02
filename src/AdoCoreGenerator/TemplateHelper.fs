@@ -1,4 +1,4 @@
-﻿namespace RequestorsFeedback.Reminders
+﻿namespace AdoCoreGenerator
 
 open System.Collections.Generic
 open System

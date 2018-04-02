@@ -2,6 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -23,7 +24,6 @@
     <Compile Include="SqlClientExtensions.fs" />
     <Compile Include="DataTable.fs" />
     <Compile Include="ISqlCommand.fs" />
-    <Compile Include="DesignTime.fs" />
     <Compile Include="CodeGenerator.fs" />
     <!--<Compile Include="QuotationsFactory.fs" />-->
     <!--<Compile Include="SingleRootTypeProvider.fs" />-->

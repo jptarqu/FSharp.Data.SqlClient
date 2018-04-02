@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="TemplateHelper.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SqlClient\SqlClient.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RazorEngine.Core.NetCore" Version="4.5.1-rc1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="spTemplate.cshtml" />
+  </ItemGroup>
+</Project>

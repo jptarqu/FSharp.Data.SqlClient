@@ -12,12 +12,11 @@ open System.Reflection
 
 type SqlCommand with
     member this.AsyncExecuteReader behavior =
-        ()
-        //Async.FromBeginEnd((fun(callback, state) -> this.BeginExecuteReader(callback, state, behavior)), this.EndExecuteReader)
+        this.ExecuteReaderAsync() |> Async.AwaitTask
+        //Async.From((fun(callback, state) -> this.BeginExecuteReader(callback, state, behavior)), this.EndExecuteReader)
 
     member this.AsyncExecuteNonQuery() =
-        ()
-        //Async.FromBeginEnd(this.BeginExecuteNonQuery, this.EndExecuteNonQuery) 
+        this.ExecuteNonQueryAsync() |> Async.AwaitTask
 
     static member internal DefaultTimeout = (new SqlCommand()).CommandTimeout
 
@@ -582,7 +581,7 @@ type SqlConnection with
                     }
             ]
 
-    member internal this.LoadDataTypesMap() = 
+    member this.LoadDataTypesMap() = 
         if not <| dataTypeMappings.ContainsKey this.ConnectionString
         then
             assert (this.State = ConnectionState.Open)

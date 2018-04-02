@@ -11,24 +11,7 @@ open Microsoft.SqlServer.Server
 open FSharp.Data.SqlClient
 
 
-type internal RowType = {
-    Provided: Type
-    ErasedTo: Type
-    
-}
 
-type internal ReturnType = {
-    Single: Type
-    PerRow: RowType option
-}  with 
-    member this.RowMapping = 
-        match this.PerRow with
-        | Some x -> x.Mapping
-        | None -> Expr.Value Unchecked.defaultof<RowMapping> 
-    member this.RowTypeName = 
-        match this.PerRow with
-        | Some x -> Expr.Value( x.ErasedTo.AssemblyQualifiedName)
-        | None -> <@@ null: string @@>
 
 type ColDef =
     {
@@ -41,98 +24,7 @@ type RowDef =
         Cols: ColDef list
     }
 
-module Generator =
-//    let GetDataRowType (columns: Column list) : RowDef = 
-//        {
-//            Name = "Row"
-//            Cols = columns |> List.mapi(fun i col ->
-//                       
-//                                   if col.Name = "" then failwithf "Column #%i doesn't have name. Only columns with names accepted. Use explicit alias." (i + 1)
-//                       
-//                                   {
-//                                       Name = col.Name
-//                                       ClrType = col.
-//                                   }
-//                               )
-//        }
-//            
-//    let GetOutputTypes (outputColumns: Column list, resultType, rank: ResultRank, hasOutputParameters) =    
-//        if resultType = ResultType.DataReader 
-//        then 
-//            { Single = typeof<SqlDataReader>; PerRow = None }
-//        elif outputColumns.IsEmpty
-//        then 
-//            { Single = typeof<int>; PerRow = None }
-//        elif resultType = ResultType.DataTable 
-//        then
-//            let dataRowType = DesignTime.GetDataRowType(outputColumns, 
-//            ?unitsOfMeasurePerSchema = unitsOfMeasurePerSchema)
-//            let dataTableType = DesignTime.GetDataTableType("Table", dataRowType, outputColumns)
-//            dataTableType.AddMember dataRowType
-//
-//            { Single = dataTableType; PerRow = None }
-//
-//        else 
-//            let providedRowType, erasedToRowType, rowMapping = 
-//                if List.length outputColumns = 1
-//                then
-//                    let column0 = outputColumns.Head
-//                    let erasedTo = column0.ErasedToType
-//                    let provided = column0.GetProvidedType(?unitsOfMeasurePerSchema = unitsOfMeasurePerSchema)
-//                    let values = Var("values", typeof<obj[]>)
-//                    let indexGet = Expr.Call(Expr.Var values, typeof<Array>.GetMethod("GetValue",[|typeof<int>|]), [Expr.Value 0])
-//                    provided, erasedTo, Expr.Lambda(values,  indexGet) 
-//
-//                elif resultType = ResultType.Records 
-//                then 
-//                    let provided = DesignTime.GetRecordType(outputColumns, ?unitsOfMeasurePerSchema = unitsOfMeasurePerSchema)
-//                    let names = Expr.NewArray(typeof<string>, outputColumns |> List.map (fun x -> Expr.Value(x.Name))) 
-//                    let mapping = 
-//                        <@@ 
-//                            fun (values: obj[]) -> 
-//                                let data = Dictionary()
-//                                let names: string[] = %%names
-//                                for i = 0 to names.Length - 1 do 
-//                                    data.Add(names.[i], values.[i])
-//                                DynamicRecord( data) |> box 
-//                        @@>
-//
-//                    upcast provided, typeof<obj>, mapping
-//                else 
-//                    let erasedToTupleType = 
-//                        match outputColumns with
-//                        | [ x ] -> x.ErasedToType
-//                        | xs -> Microsoft.FSharp.Reflection.FSharpType.MakeTupleType [| for x in xs -> x.ErasedToType |]
-//
-//                    let providedType = 
-//                        match outputColumns with
-//                        | [ x ] -> x.GetProvidedType()
-//                        | xs -> Microsoft.FSharp.Reflection.FSharpType.MakeTupleType [| for x in xs -> x.GetProvidedType(?unitsOfMeasurePerSchema = unitsOfMeasurePerSchema) |]
-//
-//                    let clrTypeName = erasedToTupleType.FullName
-//                    let mapping = <@@ Microsoft.FSharp.Reflection.FSharpValue.PreComputeTupleConstructor (Type.GetType(clrTypeName, throwOnError = true))  @@>
-//                    providedType, erasedToTupleType, mapping
-//            
-//            let nullsToOptions = QuotationsFactory.MapArrayNullableItems(outputColumns, "MapArrayObjItemToOption") 
-//            let combineWithNullsToOptions = typeof<QuotationsFactory>.GetMethod("GetMapperWithNullsToOptions") 
-//            
-//            { 
-//                Single = 
-//                    match rank with
-//                    | ResultRank.ScalarValue -> providedRowType
-//                    | ResultRank.SingleRow -> ProvidedTypeBuilder.MakeGenericType(typedefof<_ option>, [ providedRowType ])
-//                    | ResultRank.Sequence -> 
-//                   
-//                        let collectionType = if hasOutputParameters then typedefof<_ list> else typedefof<_ seq>
-//                        ProvidedTypeBuilder.MakeGenericType( collectionType, [ providedRowType ])
-//                    | unexpected -> failwithf "Unexpected ResultRank value: %A" unexpected
-//
-//                PerRow = Some { 
-//                    Provided = providedRowType
-//                    ErasedTo = erasedToRowType
-//                    Mapping = Expr.Call( combineWithNullsToOptions, [ nullsToOptions; rowMapping ]) 
-//                }               
-//            }
+type Generator(conn: SqlConnection, schema) =
     let GetOutputColumns (connection: SqlConnection, commandText, parameters: Parameter list, isStoredProcedure) = 
                 try
                     connection.GetFullQualityColumnInfo(commandText) 
@@ -142,8 +34,13 @@ module Generator =
                         connection.FallbackToSETFMONLY(commandText, commandType, parameters) 
                     with :? SqlException ->
                         raise why
-                        
-    let GenerateRoutinesCodes(conn: SqlConnection, schema, uddtsPerSchema, resultType, designTimeConnectionString, useReturnValue) =
+                            
+    let generateRoutinesNames() =
+        use c = conn.UseLocally()
+        let isSqlAzure = conn.IsSqlAzure
+        let routines = conn.GetRoutines( schema, isSqlAzure) 
+        routines |> Seq.map (fun r -> (snd r.TwoPartName))
+    let GenerateRoutinesCodes() =
         use c = conn.UseLocally()
         let isSqlAzure = conn.IsSqlAzure
         let routines = conn.GetRoutines( schema, isSqlAzure) 
@@ -154,7 +51,7 @@ module Generator =
 
             do
                 routine.Description |> Option.iter (printfn "\n routine.Description %s")
-            let parameters = conn.GetParameters( routine, isSqlAzure, useReturnValue)
+            let parameters = conn.GetParameters( routine, isSqlAzure, true)
             
             let commandText = routine.ToCommantText(parameters)
             printfn "\n commandText %s" commandText
@@ -170,7 +67,12 @@ module Generator =
             printfn "\n Columns:"
             for col in outputColumns do
                 printfn "\n %s %s" col.Name (col.GetProvidedType().Name)
-                
+       
+    let routineNames = generateRoutinesNames()
+    member this.RoutineNames
+        with get() = routineNames 
+//        and private set(value) =
+//            firstName <- value
 //            let returnType = DesignTime.GetOutputTypes(outputColumns, resultType, rank, hasOutputParameters, unitsOfMeasurePerSchema)
 
 //            do
