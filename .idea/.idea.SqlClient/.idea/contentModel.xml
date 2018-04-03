@@ -45,6 +45,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.fs" t="Include" />
+        <e p="SpsModuleGenerator.fs" t="Include" />
         <e p="spTemplate.cshtml" t="Include" />
         <e p="TemplateHelper.fs" t="Include" />
       </e>

@@ -35,42 +35,29 @@ type Generator(conn: SqlConnection, schema) =
                     with :? SqlException ->
                         raise why
                             
-    let generateRoutinesNames() =
+    let generateRoutines() =
         use c = conn.UseLocally()
         let isSqlAzure = conn.IsSqlAzure
         let routines = conn.GetRoutines( schema, isSqlAzure) 
-        routines |> Seq.map (fun r -> (snd r.TwoPartName))
-    let GenerateRoutinesCodes() =
+        routines 
+    let generateRoutinesCodes routine =
         use c = conn.UseLocally()
         let isSqlAzure = conn.IsSqlAzure
-        let routines = conn.GetRoutines( schema, isSqlAzure) 
-        for routine in routines do
-            printfn "\n snd routine.TwoPartName %s" (snd routine.TwoPartName)
-//            let cmdProvidedType = ProvidedTypeDefinition(snd routine.TwoPartName, 
-//                Some typeof<``ISqlCommand Implementation``>, HideObjectMethods = true)
-
-            do
-                routine.Description |> Option.iter (printfn "\n routine.Description %s")
-            let parameters = conn.GetParameters( routine, isSqlAzure, true)
-            
-            let commandText = routine.ToCommantText(parameters)
-            printfn "\n commandText %s" commandText
-            
-            let outputColumns = GetOutputColumns(conn, commandText, parameters, routine.IsStoredProc)
-            let rank = if routine.Type = ScalarValuedFunction then ResultRank.ScalarValue else ResultRank.Sequence
-
-            let hasOutputParameters = parameters |> List.exists (fun x -> x.Direction.HasFlag( ParameterDirection.Output))
-
-            printfn "\n Params:"
-            for param in parameters do
-                printfn "\n %s %s" param.Name (param.GetProvidedType().Name)
-            printfn "\n Columns:"
-            for col in outputColumns do
-                printfn "\n %s %s" col.Name (col.GetProvidedType().Name)
-       
-    let routineNames = generateRoutinesNames()
+        let parameters = conn.GetParameters( routine, isSqlAzure, true)
+        
+        let commandText = routine.ToCommantText(parameters)
+        printfn "\n commandText %s" commandText
+        
+        let outputColumns = GetOutputColumns(conn, commandText, parameters, routine.IsStoredProc)
+        let rank = if routine.Type = ScalarValuedFunction then ResultRank.ScalarValue else ResultRank.Sequence
+        parameters, outputColumns
+        
+    let routines = generateRoutines()
+    let routineNames = routines |> Seq.map (fun r -> (snd r.TwoPartName)) |> Seq.sort
     member this.RoutineNames
         with get() = routineNames 
+    member this.GetRoutineParamsAndCols(routineName) =
+        generateRoutinesCodes (routines |> Seq.find (fun r -> (snd r.TwoPartName) = routineName))
 //        and private set(value) =
 //            firstName <- value
 //            let returnType = DesignTime.GetOutputTypes(outputColumns, resultType, rank, hasOutputParameters, unitsOfMeasurePerSchema)
