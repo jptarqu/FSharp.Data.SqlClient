@@ -5,6 +5,7 @@ open System
 open System.Data.SqlClient;
 open FSharp.Data.SqlClient.Extensions
 open AdoCoreGenerator
+open AdoCoreGenerator
 
 let DiplaySpInfo parameters (outputColumns: Column seq) =
         printfn "Params:"
@@ -38,8 +39,10 @@ let main argv =
     let helper = TemplateHelper()
     
     let routineName = AskForSpName sqlData.RoutineNames ""
-    let p, c = sqlData.GetRoutineParamsAndCols routineName
-    DiplaySpInfo p c
+    printfn "======"
+    printfn "%s" (SpsModuleGenerator.GenerateCode sqlData [ routineName ])
+    //let p, c = sqlData.GetRoutineParamsAndCols routineName
+    //DiplaySpInfo p c
     
 //    let template = "@foreach(var n in Model.RoutineNames) {
 //                         @n

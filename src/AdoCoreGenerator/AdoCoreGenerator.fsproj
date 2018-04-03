@@ -15,6 +15,7 @@
     <PackageReference Include="RazorEngine.Core.NetCore" Version="4.5.1-rc1" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.4.3" />
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="spTemplate.cshtml" />
