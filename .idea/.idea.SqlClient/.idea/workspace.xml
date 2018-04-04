@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="28ee4f8a-8f57-406d-bc60-082fcb395110" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SqlClient/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.SqlClient/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/AdoCoreGenerator/AdoCoreGenerator.fsproj" afterPath="$PROJECT_DIR$/src/AdoCoreGenerator/AdoCoreGenerator.fsproj" />
-      <change beforePath="$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs" afterPath="$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs" />
       <change beforePath="$PROJECT_DIR$/src/AdoCoreGenerator/SpsModuleGenerator.fs" afterPath="$PROJECT_DIR$/src/AdoCoreGenerator/SpsModuleGenerator.fs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +17,7 @@
       <file leaf-file-name="CodeGenerator.fs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SqlClient/CodeGenerator.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
+            <state relative-caret-position="612">
               <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
               <folding>
                 <marker date="1522760421581" expanded="false" signature="28:197" ph="..." />
@@ -48,21 +46,9 @@
       <file leaf-file-name="Program.fs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-              <folding>
-                <marker date="1522780582220" expanded="true" signature="0:1941" ph="// Learn more about F## at http://fsharp.org ..." />
-                <marker date="1522780582220" expanded="true" signature="50:167" ph="..." />
-                <marker date="1522780582220" expanded="true" signature="224:490" ph=" = ..." />
-                <marker date="1522780582220" expanded="true" signature="261:359" ph="for param in parameters do ..." />
-                <marker date="1522780582220" expanded="true" signature="395:490" ph="for col in outputColumns do ..." />
-                <marker date="1522780582220" expanded="true" signature="549:1055" ph=" =  ..." />
-                <marker date="1522780582220" expanded="true" signature="652:1055" ph=" then ..." />
-                <marker date="1522780582220" expanded="true" signature="895:944" ph="for sp in routines do ..." />
-                <marker date="1522780582220" expanded="true" signature="1089:1909" ph=" = ..." />
-                <marker date="1522780582220" expanded="true" signature="1600:1679" ph="//let p, c = sqlData.GetRoutineParamsAndCols routineName ..." />
-                <marker date="1522780582220" expanded="true" signature="1685:1903" ph="//    let template = &quot;@foreach(var n in Model.RoutineNames) { ..." />
-              </folding>
+            <state relative-caret-position="720">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,7 +56,7 @@
       <file leaf-file-name="ISqlCommand.fs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SqlClient/ISqlCommand.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1145">
+            <state relative-caret-position="198">
               <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <marker date="1522696040439" expanded="false" signature="28:191" ph="..." />
@@ -305,20 +291,26 @@
       <file leaf-file-name="SpsModuleGenerator.fs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/SpsModuleGenerator.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="173">
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
               <folding>
-                <marker date="1522781275626" expanded="true" signature="33:97" ph="..." />
-                <marker date="1522781275626" expanded="true" signature="124:1493" ph=" = ..." />
-                <marker date="1522781275626" expanded="true" signature="180:399" ph=" = ..." />
-                <marker date="1522781275626" expanded="true" signature="198:398" ph=" ..." />
-                <marker date="1522781275626" expanded="true" signature="488:817" ph=" =  ..." />
-                <marker date="1522781275626" expanded="true" signature="509:735" ph=" =  ..." />
-                <marker date="1522781275626" expanded="true" signature="891:1139" ph=" =  ..." />
-                <marker date="1522781275626" expanded="true" signature="912:1056" ph=" =  ..." />
-                <marker date="1522781275626" expanded="true" signature="1208:1493" ph=" =  ..." />
-                <marker date="1522781275626" expanded="true" signature="1231:1477" ph=" = ..." />
-                <marker date="1522781275626" expanded="true" signature="1288:1425" ph=" -&gt;  ..." />
+                <marker date="1522858163214" expanded="false" signature="33:97" ph="..." />
+                <marker date="1522858163214" expanded="true" signature="124:3235" ph=" = ..." />
+                <marker date="1522858163214" expanded="true" signature="136:219" ph="..." />
+                <marker date="1522858163214" expanded="true" signature="252:713" ph=" = ..." />
+                <marker date="1522858163214" expanded="true" signature="270:712" ph=" ..." />
+                <marker date="1522858163214" expanded="true" signature="551:665" ph="while (dr.Read()) do ..." />
+                <marker date="1522858163214" expanded="true" signature="802:1131" ph=" =  ..." />
+                <marker date="1522858163214" expanded="true" signature="823:1049" ph=" =  ..." />
+                <marker date="1522858163214" expanded="true" signature="1205:1453" ph=" =  ..." />
+                <marker date="1522858163214" expanded="true" signature="1226:1370" ph=" =  ..." />
+                <marker date="1522858163214" expanded="true" signature="1546:1867" ph=" =  ..." />
+                <marker date="1522858163214" expanded="true" signature="1567:1724" ph=" =  ..." />
+                <marker date="1522858163214" expanded="true" signature="1924:2098" ph=": string = ..." />
+                <marker date="1522858163214" expanded="true" signature="2215:2873" ph="  = ..." />
+                <marker date="1522858163214" expanded="true" signature="2950:3235" ph=" =  ..." />
+                <marker date="1522858163214" expanded="true" signature="2973:3219" ph=" = ..." />
+                <marker date="1522858163214" expanded="true" signature="3030:3167" ph=" -&gt;  ..." />
               </folding>
             </state>
           </provider>
@@ -327,7 +319,7 @@
       <file leaf-file-name="SqlClient.fsproj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SqlClient/SqlClient.fsproj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="450">
               <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding />
             </state>
@@ -390,8 +382,8 @@
     <setting file="file://$PROJECT_DIR$/src/SqlClient/DataTable.fs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AdoCoreGenerator/spTemplate.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0C62F1D2-D06C-49DC-AD9E-522DC2521CF2/80/a70df81c/SqlCommand.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/SqlClient/DynamicRecord.fs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AdoCoreGenerator/SpsModuleGenerator.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SqlClient/DynamicRecord.fs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SqlClient/SqlClientExtensions.fs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SqlClient/CodeGenerator.fs" root0="FORCE_HIGHLIGHTING" />
@@ -419,9 +411,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-108" />
-    <option name="y" value="337" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
@@ -454,11 +445,6 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="SqlClient (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="AdoCoreGenerator" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="SqlClient (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="SqlClient" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -540,11 +526,13 @@
       <workItem from="1522755980764" duration="2610000" />
       <workItem from="1522761071861" duration="458000" />
       <workItem from="1522761768589" duration="4744000" />
+      <workItem from="1522847577184" duration="3617000" />
+      <workItem from="1522853189435" duration="2453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11324000" />
+    <option name="totallyTimeSpent" value="17394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,7 +544,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-108" y="337" width="1440" height="797" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -564,8 +553,8 @@
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42735043" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -592,6 +581,666 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/CodeGenerator.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522760421581" expanded="false" signature="28:197" ph="..." />
+            <marker date="1522760421581" expanded="true" signature="214:272" ph="= ..." />
+            <marker date="1522760421581" expanded="true" signature="220:272" ph="{ ..." />
+            <marker date="1522760421581" expanded="true" signature="285:345" ph="= ..." />
+            <marker date="1522760421581" expanded="true" signature="291:345" ph="{ ..." />
+            <marker date="1522760421581" expanded="true" signature="362:2079" ph="conn: SqlConnection, schema) = ..." />
+            <marker date="1522760421581" expanded="true" signature="505:960" ph=" =  ..." />
+            <marker date="1522760421581" expanded="true" signature="528:960" ph=" ..." />
+            <marker date="1522760421581" expanded="true" signature="619:960" ph=" :? SqlException as why -&gt; ..." />
+            <marker date="1522760421581" expanded="true" signature="642:960" ph=" -&gt; ..." />
+            <marker date="1522760421581" expanded="true" signature="907:960" ph=" :? SqlException -&gt; ..." />
+            <marker date="1522760421581" expanded="true" signature="1016:1172" ph=" = ..." />
+            <marker date="1522760421581" expanded="true" signature="1211:1729" ph=" = ..." />
+            <marker date="1522760421581" expanded="true" signature="1891:1925" ph=" ..." />
+            <marker date="1522760421581" expanded="true" signature="1979:2079" ph=" = ..." />
+            <marker date="1522760421581" expanded="true" signature="2080:2283" ph="//        and private set(value) = ..." />
+            <marker date="1522760421581" expanded="true" signature="2285:2406" ph="//            do ..." />
+            <marker date="1522760421581" expanded="true" signature="2420:5031" ph="//ctors ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/ISqlCommand.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1522696040439" expanded="false" signature="28:191" ph="..." />
+            <marker date="1522696040439" expanded="true" signature="379:747" ph="=  ..." />
+            <marker date="1522696040439" expanded="true" signature="759:998" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="796:998" ph=" =   ..." />
+            <marker date="1522696040439" expanded="true" signature="859:998" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="1212:1275" ph="=  ..." />
+            <marker date="1522696040439" expanded="true" signature="1670:1911" ph="= { ..." />
+            <marker date="1522696040439" expanded="true" signature="2192:14564" ph="cfg: DesignTimeConfig, connection: Connection, commandTimeout) =  ..." />
+            <marker date="1522696040439" expanded="true" signature="2363:2743" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="2396:2743" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="2434:2521" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="2551:2612" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="2638:2743" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="2751:2907" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="2936:3314" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="2953:3286" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3081:3191" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3098:3191" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3449:5565" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="3486:5565" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3518:3714" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="3745:3945" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="3994:5485" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="4082:4331" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="4370:5485" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="4572:4784" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="4840:5057" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="5099:5485" ph="executeHandle.Invoke(null, [| cfg.Rank; cfg.RowMapping |]) |&gt; unbox &gt;&gt; box,  ..." />
+            <marker date="1522696040439" expanded="true" signature="5645:7347" ph=" with ..." />
+            <marker date="1522696040439" expanded="true" signature="6205:7251" ph=" =   ..." />
+            <marker date="1522696040439" expanded="true" signature="6338:6536" ph=" = ..." />
+            <marker date="1522696040439" expanded="true" signature="6371:6536" ph=" then ..." />
+            <marker date="1522696040439" expanded="true" signature="6555:7229" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="6725:6982" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="6746:6982" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="6768:6982" ph="yield cmd.Parameters ..." />
+            <marker date="1522696040439" expanded="true" signature="7025:7216" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7047:7216" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7069:7216" ph="yield parameters ..." />
+            <marker date="1522696040439" expanded="true" signature="7386:7449" ph=" with ..." />
+            <marker date="1522696040439" expanded="true" signature="7421:7449" ph=" = ..." />
+            <marker date="1522696040439" expanded="true" signature="7538:8630" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="7550:8630" ph="for name, value in parameters do ..." />
+            <marker date="1522696040439" expanded="true" signature="7711:8630" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="7728:8480" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7761:8480" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7783:7828" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7914:8480" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="7939:7981" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="8562:8630" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8579:8630" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8747:9739" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="8812:9739" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8825:9739" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="8883:9105" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8900:9105" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="9119:9739" ph="for i = 0 to expected.Length - 1 do ..." />
+            <marker date="1522696040439" expanded="true" signature="9439:9739" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="9460:9739" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="9844:10090" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10200:10501" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10219:10500" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="10613:10850" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10963:11255" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10982:11254" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="11320:12816" ph=" = fun(cmd: SqlCommand, getReaderBehavior, parameters, expectedDataReaderColumns) -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="11589:12816" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="11602:12154" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="11622:11846" ph=" = Seq.delay &lt;| fun() -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="11890:12154" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="11908:11951" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="11998:12154" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="12016:12061" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="12194:12430" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="12466:12789" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="12483:12789" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="12500:12789" ph="for i = 0 to parameters.Length - 1 do ..." />
+            <marker date="1522696040439" expanded="true" signature="12707:12789" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="12732:12789" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="12898:13679" ph=" = fun(cmd, getReaderBehavior, parameters, expectedDataReaderColumns) -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="12985:13228" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="13008:13227" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13268:13679" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13281:13406" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13301:13386" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13449:13679" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="13463:13591" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="13484:13571" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13765:14251" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="13978:14227" ph="for i = 0 to parameters.Length - 1 do ..." />
+            <marker date="1522696040439" expanded="true" signature="14161:14227" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="14178:14227" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="14341:14564" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="14432:14563" ph="          ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/SqlClientExtensions.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <marker date="1522697380506" expanded="true" signature="52:29014" ph=" ..." />
+            <marker date="1522697380506" expanded="false" signature="59:224" ph="..." />
+            <marker date="1522697380506" expanded="true" signature="242:833" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="290:345" ph=" = ..." />
+            <marker date="1522697380506" expanded="true" signature="507:564" ph=" = ..." />
+            <marker date="1522697380506" expanded="true" signature="689:833" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="706:832" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="765:823" ph="while cursor.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="854:1169" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="917:1169" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="934:1168" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="1030:1159" ph="while this.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="1190:1536" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="1245:1352" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="1427:1536" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="1581:3655" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="1819:1953" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="1847:1953" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="1992:2340" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="2083:2340" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="2096:2295" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="2607:3299" ph=" = { ..." />
+            <marker date="1522697380506" expanded="true" signature="3329:3655" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="3670:4308" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="4325:4797" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="4566:4729" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="4612:4729" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="4764:4797" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5108:5467" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5220:5438" ph=" -&gt;  ..." />
+            <marker date="1522697380506" expanded="true" signature="5243:5423" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5529:5663" ph="  =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5933:7061" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5956:7061" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="6020:6417" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="6447:7044" ph=" when x.UnaryExpressionType &lt;&gt; Microsoft.SqlServer.TransactSql.ScriptDom.UnaryExpressionType.BitwiseNot -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="6663:7044" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="6731:7023" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="7176:7995" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="7510:7995" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="7615:7995" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="8023:10767" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="8035:10767" ph=" [ ..." />
+            <marker date="1522697380506" expanded="true" signature="10689:10761" ph="//TODO  ..." />
+            <marker date="1522697380506" expanded="true" signature="10789:29014" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="10796:10972" ph="//address an issue when regular Dispose on SqlConnection needed for async computation  ..." />
+            <marker date="1522697380506" expanded="true" signature="11019:11291" ph=" = ..." />
+            <marker date="1522697380506" expanded="true" signature="11118:11291" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="11131:11228" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="11336:11638" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="11484:11638" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="11666:11843" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="11886:12092" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12151:15490" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12238:12482" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12267:12482" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="12285:12327" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="12513:14459" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12536:14439" ph=" &quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="14615:15456" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="14826:15161" ph=" =   ..." />
+            <marker date="1522697380506" expanded="true" signature="14885:15161" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="15176:15455" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="15589:19574" ph=" =       ..." />
+            <marker date="1522697380506" expanded="true" signature="15675:16435" ph=" = Task.Factory.StartNew( fun() -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="16130:16405" ph=" with ..." />
+            <marker date="1522697380506" expanded="true" signature="16240:16391" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="16468:16839" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="16497:16839" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="16515:16557" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="16859:17493" ph=" = sprintf &quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="17504:19573" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="17613:19028" ph="while cursor.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="17715:17997" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="17778:17997" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="17803:17854" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="18532:19028" ph="yield {  ..." />
+            <marker date="1522697380506" expanded="true" signature="19083:19563" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="19101:19563" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="19118:19563" ph="yield { ..." />
+            <marker date="1522697380506" expanded="true" signature="19639:21302" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="19725:19963" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="19754:19963" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="19772:19814" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="19992:21028" ph=" = sprintf &quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="21114:21277" ph=" -&gt;  ..." />
+            <marker date="1522697380506" expanded="true" signature="21131:21277" ph="string x.[&quot;Name&quot;],  ..." />
+            <marker date="1522697380506" expanded="true" signature="21365:22467" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="21641:22435" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="21797:22434" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="22568:23800" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="22719:22812" ph="for p in parameters do ..." />
+            <marker date="1522697380506" expanded="true" signature="22922:23800" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="22966:23800" ph=" -&gt;  ..." />
+            <marker date="1522697380506" expanded="true" signature="23001:23786" ph="for row in columnSchema.Rows do ..." />
+            <marker date="1522697380506" expanded="true" signature="23053:23786" ph="yield {  ..." />
+            <marker date="1522697380506" expanded="true" signature="23836:29014" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="23908:29014" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="23921:29014" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="24106:25159" ph=" = [| ..." />
+            <marker date="1522697380506" expanded="true" signature="24135:24422" ph=" = new SqlCommand(&quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="24489:25144" ph="while reader.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="24787:25144" ph=" then ..." />
+            <marker date="1522697380506" expanded="true" signature="24815:25144" ph="yield  ..." />
+            <marker date="1522697380506" expanded="true" signature="24846:25144" ph="string reader.[&quot;name&quot;],  ..." />
+            <marker date="1522697380506" expanded="true" signature="25186:28945" ph=" = [| ..." />
+            <marker date="1522697380506" expanded="true" signature="25208:28930" ph="for name, system_type_id, user_type_id, is_table_type, schema_name, is_user_defined in sqlEngineTypes do ..." />
+            <marker date="1522697380506" expanded="true" signature="25383:26155" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="25453:26155" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="25535:25942" ph=" when is_user_defined &amp;&amp; not is_table_type -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="26188:28404" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="26216:28404" ph="lazy  ..." />
+            <marker date="1522697380506" expanded="true" signature="26266:28404" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="26299:28326" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="26334:28324" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="26378:26859" ph=" = new SqlCommand(&quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="27191:28291" ph="while reader.Read() do  ..." />
+            <marker date="1522697380506" expanded="true" signature="27447:28291" ph="yield { ..." />
+            <marker date="1522697380506" expanded="true" signature="28425:28930" ph="yield { ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/SpsModuleGenerator.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <marker date="1522858163214" expanded="false" signature="33:97" ph="..." />
+            <marker date="1522858163214" expanded="true" signature="124:3235" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="136:219" ph="..." />
+            <marker date="1522858163214" expanded="true" signature="252:713" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="270:712" ph=" ..." />
+            <marker date="1522858163214" expanded="true" signature="551:665" ph="while (dr.Read()) do ..." />
+            <marker date="1522858163214" expanded="true" signature="802:1131" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="823:1049" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1205:1453" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1226:1370" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1546:1867" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1567:1724" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1924:2098" ph=": string = ..." />
+            <marker date="1522858163214" expanded="true" signature="2215:2873" ph="  = ..." />
+            <marker date="1522858163214" expanded="true" signature="2950:3235" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="2973:3219" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="3030:3167" ph=" -&gt;  ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/SqlClient.fsproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/DataTable.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522692500921" expanded="true" signature="28:137" ph="..." />
+            <marker date="1522692500921" expanded="true" signature="337:4643" ph="when 'T :&gt; DataRow&gt;(selectCommand: SqlCommand, ?connectionString: Lazy&lt;string&gt;) =  ..." />
+            <marker date="1522692500921" expanded="true" signature="489:1449" ph=" : IList&lt;'T&gt; = { ..." />
+            <marker date="1522692500921" expanded="true" signature="898:988" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="1657:3644" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="1872:2020" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="1886:2020" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="2163:3461" ph=" = dataAdapter.RowUpdating.Subscribe(fun args -&gt; ..." />
+            <marker date="1522692500921" expanded="true" signature="2363:3451" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="2380:3451" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="2451:2795" ph="for c in this.Columns do ..." />
+            <marker date="1522692500921" expanded="true" signature="2588:2795" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="2613:2795" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="2842:3451" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="2863:3451" ph="                         ..." />
+            <marker date="1522692500921" expanded="true" signature="3122:3285" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="3192:3285" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="3743:4643" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="3780:4235" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="3830:4235" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="3953:4235" ph=" -&gt; ..." />
+            <marker date="1522692500921" expanded="true" signature="4015:4142" ph="  ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/CodeGenerator.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding>
+            <marker date="1522760421581" expanded="false" signature="28:197" ph="..." />
+            <marker date="1522760421581" expanded="true" signature="214:272" ph="= ..." />
+            <marker date="1522760421581" expanded="true" signature="220:272" ph="{ ..." />
+            <marker date="1522760421581" expanded="true" signature="285:345" ph="= ..." />
+            <marker date="1522760421581" expanded="true" signature="291:345" ph="{ ..." />
+            <marker date="1522760421581" expanded="true" signature="362:2079" ph="conn: SqlConnection, schema) = ..." />
+            <marker date="1522760421581" expanded="true" signature="505:960" ph=" =  ..." />
+            <marker date="1522760421581" expanded="true" signature="528:960" ph=" ..." />
+            <marker date="1522760421581" expanded="true" signature="619:960" ph=" :? SqlException as why -&gt; ..." />
+            <marker date="1522760421581" expanded="true" signature="642:960" ph=" -&gt; ..." />
+            <marker date="1522760421581" expanded="true" signature="907:960" ph=" :? SqlException -&gt; ..." />
+            <marker date="1522760421581" expanded="true" signature="1016:1172" ph=" = ..." />
+            <marker date="1522760421581" expanded="true" signature="1211:1729" ph=" = ..." />
+            <marker date="1522760421581" expanded="true" signature="1891:1925" ph=" ..." />
+            <marker date="1522760421581" expanded="true" signature="1979:2079" ph=" = ..." />
+            <marker date="1522760421581" expanded="true" signature="2080:2283" ph="//        and private set(value) = ..." />
+            <marker date="1522760421581" expanded="true" signature="2285:2406" ph="//            do ..." />
+            <marker date="1522760421581" expanded="true" signature="2420:5031" ph="//ctors ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/ISqlCommand.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1522696040439" expanded="false" signature="28:191" ph="..." />
+            <marker date="1522696040439" expanded="true" signature="379:747" ph="=  ..." />
+            <marker date="1522696040439" expanded="true" signature="759:998" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="796:998" ph=" =   ..." />
+            <marker date="1522696040439" expanded="true" signature="859:998" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="1212:1275" ph="=  ..." />
+            <marker date="1522696040439" expanded="true" signature="1670:1911" ph="= { ..." />
+            <marker date="1522696040439" expanded="true" signature="2192:14564" ph="cfg: DesignTimeConfig, connection: Connection, commandTimeout) =  ..." />
+            <marker date="1522696040439" expanded="true" signature="2363:2743" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="2396:2743" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="2434:2521" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="2551:2612" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="2638:2743" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="2751:2907" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="2936:3314" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="2953:3286" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3081:3191" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3098:3191" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3449:5565" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="3486:5565" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="3518:3714" ph=" -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="3745:3945" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="3994:5485" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="4082:4331" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="4370:5485" ph=" -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="4572:4784" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="4840:5057" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="5099:5485" ph="executeHandle.Invoke(null, [| cfg.Rank; cfg.RowMapping |]) |&gt; unbox &gt;&gt; box,  ..." />
+            <marker date="1522696040439" expanded="true" signature="5645:7347" ph=" with ..." />
+            <marker date="1522696040439" expanded="true" signature="6205:7251" ph=" =   ..." />
+            <marker date="1522696040439" expanded="true" signature="6338:6536" ph=" = ..." />
+            <marker date="1522696040439" expanded="true" signature="6371:6536" ph=" then ..." />
+            <marker date="1522696040439" expanded="true" signature="6555:7229" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="6725:6982" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="6746:6982" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="6768:6982" ph="yield cmd.Parameters ..." />
+            <marker date="1522696040439" expanded="true" signature="7025:7216" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7047:7216" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7069:7216" ph="yield parameters ..." />
+            <marker date="1522696040439" expanded="true" signature="7386:7449" ph=" with ..." />
+            <marker date="1522696040439" expanded="true" signature="7421:7449" ph=" = ..." />
+            <marker date="1522696040439" expanded="true" signature="7538:8630" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="7550:8630" ph="for name, value in parameters do ..." />
+            <marker date="1522696040439" expanded="true" signature="7711:8630" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="7728:8480" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7761:8480" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7783:7828" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="7914:8480" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="7939:7981" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="8562:8630" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8579:8630" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8747:9739" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="8812:9739" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8825:9739" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="8883:9105" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="8900:9105" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="9119:9739" ph="for i = 0 to expected.Length - 1 do ..." />
+            <marker date="1522696040439" expanded="true" signature="9439:9739" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="9460:9739" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="9844:10090" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10200:10501" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10219:10500" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="10613:10850" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10963:11255" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="10982:11254" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="11320:12816" ph=" = fun(cmd: SqlCommand, getReaderBehavior, parameters, expectedDataReaderColumns) -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="11589:12816" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="11602:12154" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="11622:11846" ph=" = Seq.delay &lt;| fun() -&gt;  ..." />
+            <marker date="1522696040439" expanded="true" signature="11890:12154" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="11908:11951" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="11998:12154" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="12016:12061" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="12194:12430" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="12466:12789" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="12483:12789" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="12500:12789" ph="for i = 0 to parameters.Length - 1 do ..." />
+            <marker date="1522696040439" expanded="true" signature="12707:12789" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="12732:12789" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="12898:13679" ph=" = fun(cmd, getReaderBehavior, parameters, expectedDataReaderColumns) -&gt; ..." />
+            <marker date="1522696040439" expanded="true" signature="12985:13228" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="13008:13227" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13268:13679" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13281:13406" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13301:13386" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13449:13679" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="13463:13591" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="13484:13571" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="13765:14251" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="13978:14227" ph="for i = 0 to parameters.Length - 1 do ..." />
+            <marker date="1522696040439" expanded="true" signature="14161:14227" ph=" ..." />
+            <marker date="1522696040439" expanded="true" signature="14178:14227" ph="  ..." />
+            <marker date="1522696040439" expanded="true" signature="14341:14564" ph=" =  ..." />
+            <marker date="1522696040439" expanded="true" signature="14432:14563" ph="          ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/SqlClientExtensions.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <marker date="1522697380506" expanded="true" signature="52:29014" ph=" ..." />
+            <marker date="1522697380506" expanded="false" signature="59:224" ph="..." />
+            <marker date="1522697380506" expanded="true" signature="242:833" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="290:345" ph=" = ..." />
+            <marker date="1522697380506" expanded="true" signature="507:564" ph=" = ..." />
+            <marker date="1522697380506" expanded="true" signature="689:833" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="706:832" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="765:823" ph="while cursor.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="854:1169" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="917:1169" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="934:1168" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="1030:1159" ph="while this.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="1190:1536" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="1245:1352" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="1427:1536" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="1581:3655" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="1819:1953" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="1847:1953" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="1992:2340" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="2083:2340" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="2096:2295" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="2607:3299" ph=" = { ..." />
+            <marker date="1522697380506" expanded="true" signature="3329:3655" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="3670:4308" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="4325:4797" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="4566:4729" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="4612:4729" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="4764:4797" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5108:5467" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5220:5438" ph=" -&gt;  ..." />
+            <marker date="1522697380506" expanded="true" signature="5243:5423" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5529:5663" ph="  =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5933:7061" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="5956:7061" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="6020:6417" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="6447:7044" ph=" when x.UnaryExpressionType &lt;&gt; Microsoft.SqlServer.TransactSql.ScriptDom.UnaryExpressionType.BitwiseNot -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="6663:7044" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="6731:7023" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="7176:7995" ph="= { ..." />
+            <marker date="1522697380506" expanded="true" signature="7510:7995" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="7615:7995" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="8023:10767" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="8035:10767" ph=" [ ..." />
+            <marker date="1522697380506" expanded="true" signature="10689:10761" ph="//TODO  ..." />
+            <marker date="1522697380506" expanded="true" signature="10789:29014" ph="with ..." />
+            <marker date="1522697380506" expanded="true" signature="10796:10972" ph="//address an issue when regular Dispose on SqlConnection needed for async computation  ..." />
+            <marker date="1522697380506" expanded="true" signature="11019:11291" ph=" = ..." />
+            <marker date="1522697380506" expanded="true" signature="11118:11291" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="11131:11228" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="11336:11638" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="11484:11638" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="11666:11843" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="11886:12092" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12151:15490" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12238:12482" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12267:12482" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="12285:12327" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="12513:14459" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="12536:14439" ph=" &quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="14615:15456" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="14826:15161" ph=" =   ..." />
+            <marker date="1522697380506" expanded="true" signature="14885:15161" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="15176:15455" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="15589:19574" ph=" =       ..." />
+            <marker date="1522697380506" expanded="true" signature="15675:16435" ph=" = Task.Factory.StartNew( fun() -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="16130:16405" ph=" with ..." />
+            <marker date="1522697380506" expanded="true" signature="16240:16391" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="16468:16839" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="16497:16839" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="16515:16557" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="16859:17493" ph=" = sprintf &quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="17504:19573" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="17613:19028" ph="while cursor.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="17715:17997" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="17778:17997" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="17803:17854" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="18532:19028" ph="yield {  ..." />
+            <marker date="1522697380506" expanded="true" signature="19083:19563" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="19101:19563" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="19118:19563" ph="yield { ..." />
+            <marker date="1522697380506" expanded="true" signature="19639:21302" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="19725:19963" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="19754:19963" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="19772:19814" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="19992:21028" ph=" = sprintf &quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="21114:21277" ph=" -&gt;  ..." />
+            <marker date="1522697380506" expanded="true" signature="21131:21277" ph="string x.[&quot;Name&quot;],  ..." />
+            <marker date="1522697380506" expanded="true" signature="21365:22467" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="21641:22435" ph=" -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="21797:22434" ph="  ..." />
+            <marker date="1522697380506" expanded="true" signature="22568:23800" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="22719:22812" ph="for p in parameters do ..." />
+            <marker date="1522697380506" expanded="true" signature="22922:23800" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="22966:23800" ph=" -&gt;  ..." />
+            <marker date="1522697380506" expanded="true" signature="23001:23786" ph="for row in columnSchema.Rows do ..." />
+            <marker date="1522697380506" expanded="true" signature="23053:23786" ph="yield {  ..." />
+            <marker date="1522697380506" expanded="true" signature="23836:29014" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="23908:29014" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="23921:29014" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="24106:25159" ph=" = [| ..." />
+            <marker date="1522697380506" expanded="true" signature="24135:24422" ph=" = new SqlCommand(&quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="24489:25144" ph="while reader.Read() do ..." />
+            <marker date="1522697380506" expanded="true" signature="24787:25144" ph=" then ..." />
+            <marker date="1522697380506" expanded="true" signature="24815:25144" ph="yield  ..." />
+            <marker date="1522697380506" expanded="true" signature="24846:25144" ph="string reader.[&quot;name&quot;],  ..." />
+            <marker date="1522697380506" expanded="true" signature="25186:28945" ph=" = [| ..." />
+            <marker date="1522697380506" expanded="true" signature="25208:28930" ph="for name, system_type_id, user_type_id, is_table_type, schema_name, is_user_defined in sqlEngineTypes do ..." />
+            <marker date="1522697380506" expanded="true" signature="25383:26155" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="25453:26155" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="25535:25942" ph=" when is_user_defined &amp;&amp; not is_table_type -&gt; ..." />
+            <marker date="1522697380506" expanded="true" signature="26188:28404" ph=" =  ..." />
+            <marker date="1522697380506" expanded="true" signature="26216:28404" ph="lazy  ..." />
+            <marker date="1522697380506" expanded="true" signature="26266:28404" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="26299:28326" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="26334:28324" ph=" ..." />
+            <marker date="1522697380506" expanded="true" signature="26378:26859" ph=" = new SqlCommand(&quot; ..." />
+            <marker date="1522697380506" expanded="true" signature="27191:28291" ph="while reader.Read() do  ..." />
+            <marker date="1522697380506" expanded="true" signature="27447:28291" ph="yield { ..." />
+            <marker date="1522697380506" expanded="true" signature="28425:28930" ph="yield { ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/SqlClient.fsproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlClient/DataTable.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522692500921" expanded="true" signature="28:137" ph="..." />
+            <marker date="1522692500921" expanded="true" signature="337:4643" ph="when 'T :&gt; DataRow&gt;(selectCommand: SqlCommand, ?connectionString: Lazy&lt;string&gt;) =  ..." />
+            <marker date="1522692500921" expanded="true" signature="489:1449" ph=" : IList&lt;'T&gt; = { ..." />
+            <marker date="1522692500921" expanded="true" signature="898:988" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="1657:3644" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="1872:2020" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="1886:2020" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="2163:3461" ph=" = dataAdapter.RowUpdating.Subscribe(fun args -&gt; ..." />
+            <marker date="1522692500921" expanded="true" signature="2363:3451" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="2380:3451" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="2451:2795" ph="for c in this.Columns do ..." />
+            <marker date="1522692500921" expanded="true" signature="2588:2795" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="2613:2795" ph="  ..." />
+            <marker date="1522692500921" expanded="true" signature="2842:3451" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="2863:3451" ph="                         ..." />
+            <marker date="1522692500921" expanded="true" signature="3122:3285" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="3192:3285" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="3743:4643" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="3780:4235" ph=" =  ..." />
+            <marker date="1522692500921" expanded="true" signature="3830:4235" ph=" ..." />
+            <marker date="1522692500921" expanded="true" signature="3953:4235" ph=" -&gt; ..." />
+            <marker date="1522692500921" expanded="true" signature="4015:4142" ph="  ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/SpsModuleGenerator.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <marker date="1522858163214" expanded="false" signature="33:97" ph="..." />
+            <marker date="1522858163214" expanded="true" signature="124:3235" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="136:219" ph="..." />
+            <marker date="1522858163214" expanded="true" signature="252:713" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="270:712" ph=" ..." />
+            <marker date="1522858163214" expanded="true" signature="551:665" ph="while (dr.Read()) do ..." />
+            <marker date="1522858163214" expanded="true" signature="802:1131" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="823:1049" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1205:1453" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1226:1370" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1546:1867" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1567:1724" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1924:2098" ph=": string = ..." />
+            <marker date="1522858163214" expanded="true" signature="2215:2873" ph="  = ..." />
+            <marker date="1522858163214" expanded="true" signature="2950:3235" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="2973:3219" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="3030:3167" ph=" -&gt;  ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SqlClient/CodeGenerator.fs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1042,30 +1691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlClient/DynamicRecord.fs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-          <folding>
-            <marker date="1522780582220" expanded="true" signature="0:1941" ph="// Learn more about F## at http://fsharp.org ..." />
-            <marker date="1522780582220" expanded="true" signature="50:167" ph="..." />
-            <marker date="1522780582220" expanded="true" signature="224:490" ph=" = ..." />
-            <marker date="1522780582220" expanded="true" signature="261:359" ph="for param in parameters do ..." />
-            <marker date="1522780582220" expanded="true" signature="395:490" ph="for col in outputColumns do ..." />
-            <marker date="1522780582220" expanded="true" signature="549:1055" ph=" =  ..." />
-            <marker date="1522780582220" expanded="true" signature="652:1055" ph=" then ..." />
-            <marker date="1522780582220" expanded="true" signature="895:944" ph="for sp in routines do ..." />
-            <marker date="1522780582220" expanded="true" signature="1089:1909" ph=" = ..." />
-            <marker date="1522780582220" expanded="true" signature="1600:1679" ph="//let p, c = sqlData.GetRoutineParamsAndCols routineName ..." />
-            <marker date="1522780582220" expanded="true" signature="1685:1903" ph="//    let template = &quot;@foreach(var n in Model.RoutineNames) { ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1352,19 +1981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <marker date="1522780582220" expanded="true" signature="0:1941" ph="// Learn more about F## at http://fsharp.org ..." />
-            <marker date="1522780582220" expanded="true" signature="50:167" ph="..." />
-            <marker date="1522780582220" expanded="true" signature="224:490" ph=" = ..." />
-            <marker date="1522780582220" expanded="true" signature="261:359" ph="for param in parameters do ..." />
-            <marker date="1522780582220" expanded="true" signature="395:490" ph="for col in outputColumns do ..." />
-            <marker date="1522780582220" expanded="true" signature="549:1055" ph=" =  ..." />
-            <marker date="1522780582220" expanded="true" signature="652:1055" ph=" then ..." />
-            <marker date="1522780582220" expanded="true" signature="895:944" ph="for sp in routines do ..." />
-            <marker date="1522780582220" expanded="true" signature="1089:1909" ph=" = ..." />
-            <marker date="1522780582220" expanded="true" signature="1600:1679" ph="//let p, c = sqlData.GetRoutineParamsAndCols routineName ..." />
-            <marker date="1522780582220" expanded="true" signature="1685:1903" ph="//    let template = &quot;@foreach(var n in Model.RoutineNames) { ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1419,13 +2035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlClient/DynamicRecord.fs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SqlClient/DataTable.fs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1459,7 +2068,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SqlClient/ISqlCommand.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1145">
+        <state relative-caret-position="198">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <marker date="1522696040439" expanded="false" signature="28:191" ph="..." />
@@ -1562,7 +2171,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SqlClient/SqlClient.fsproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="450">
           <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding />
         </state>
@@ -1698,27 +2307,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/Program.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <marker date="1522780582220" expanded="true" signature="0:1941" ph="// Learn more about F## at http://fsharp.org ..." />
-            <marker date="1522780582220" expanded="true" signature="50:167" ph="..." />
-            <marker date="1522780582220" expanded="true" signature="224:490" ph=" = ..." />
-            <marker date="1522780582220" expanded="true" signature="261:359" ph="for param in parameters do ..." />
-            <marker date="1522780582220" expanded="true" signature="395:490" ph="for col in outputColumns do ..." />
-            <marker date="1522780582220" expanded="true" signature="549:1055" ph=" =  ..." />
-            <marker date="1522780582220" expanded="true" signature="652:1055" ph=" then ..." />
-            <marker date="1522780582220" expanded="true" signature="895:944" ph="for sp in routines do ..." />
-            <marker date="1522780582220" expanded="true" signature="1089:1909" ph=" = ..." />
-            <marker date="1522780582220" expanded="true" signature="1600:1679" ph="//let p, c = sqlData.GetRoutineParamsAndCols routineName ..." />
-            <marker date="1522780582220" expanded="true" signature="1685:1903" ph="//    let template = &quot;@foreach(var n in Model.RoutineNames) { ..." />
-          </folding>
+        <state relative-caret-position="720">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SqlClient/CodeGenerator.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
+        <state relative-caret-position="612">
           <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding>
             <marker date="1522760421581" expanded="false" signature="28:197" ph="..." />
@@ -1745,20 +2342,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdoCoreGenerator/SpsModuleGenerator.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="173">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding>
-            <marker date="1522781275626" expanded="true" signature="33:97" ph="..." />
-            <marker date="1522781275626" expanded="true" signature="124:1493" ph=" = ..." />
-            <marker date="1522781275626" expanded="true" signature="180:399" ph=" = ..." />
-            <marker date="1522781275626" expanded="true" signature="198:398" ph=" ..." />
-            <marker date="1522781275626" expanded="true" signature="488:817" ph=" =  ..." />
-            <marker date="1522781275626" expanded="true" signature="509:735" ph=" =  ..." />
-            <marker date="1522781275626" expanded="true" signature="891:1139" ph=" =  ..." />
-            <marker date="1522781275626" expanded="true" signature="912:1056" ph=" =  ..." />
-            <marker date="1522781275626" expanded="true" signature="1208:1493" ph=" =  ..." />
-            <marker date="1522781275626" expanded="true" signature="1231:1477" ph=" = ..." />
-            <marker date="1522781275626" expanded="true" signature="1288:1425" ph=" -&gt;  ..." />
+            <marker date="1522858163214" expanded="false" signature="33:97" ph="..." />
+            <marker date="1522858163214" expanded="true" signature="124:3235" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="136:219" ph="..." />
+            <marker date="1522858163214" expanded="true" signature="252:713" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="270:712" ph=" ..." />
+            <marker date="1522858163214" expanded="true" signature="551:665" ph="while (dr.Read()) do ..." />
+            <marker date="1522858163214" expanded="true" signature="802:1131" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="823:1049" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1205:1453" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1226:1370" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1546:1867" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1567:1724" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="1924:2098" ph=": string = ..." />
+            <marker date="1522858163214" expanded="true" signature="2215:2873" ph="  = ..." />
+            <marker date="1522858163214" expanded="true" signature="2950:3235" ph=" =  ..." />
+            <marker date="1522858163214" expanded="true" signature="2973:3219" ph=" = ..." />
+            <marker date="1522858163214" expanded="true" signature="3030:3167" ph=" -&gt;  ..." />
           </folding>
         </state>
       </provider>
